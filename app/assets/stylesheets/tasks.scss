@@ -1,0 +1,49 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$text-color: #343434;
+
+body {
+  margin: 50px;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  color: $text-color;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.container {
+  padding: 15px;
+  background-color: #F7F7F7;
+  border-left: solid 2px #333333;
+  margin: 10px 0;
+}
+
+.options {
+  color: #848484;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.back:hover{
+  color: $text-color;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+}
+
+.edit {
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#task-title {
+  margin: 5px 15px;
+}

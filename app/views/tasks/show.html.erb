@@ -1,0 +1,18 @@
+<div class="task-info">
+  <h1><%= @task.title %></h1>
+  <p><%= link_to "🗓 Back", root_path, class: "options" %></p>
+  <p><%= link_to "🖋 Edit", edit_task_path(@task), class: "options" %></p>
+  <p><%= link_to "🗑 Delete", task_path(@task), class: "options", method: :delete, data: { confirm: "Are you sure?"} %></p>
+</div>
+<div class="container">
+  <p><%= @task.details %></p>
+</div>
+
+<% if @task.completed %>
+  <input type="checkbox" id="task-status" name="task" value="task-status" checked="">
+  <label for="task-status">This task is done!</label>
+<% else %>
+  <input type="checkbox" id="task-status" name="task" value="task-status">
+  <label for="task-status">This task is not completed yet.</label>
+<% end %>
+
